@@ -1,15 +1,15 @@
 import React from "react";
 
-import styles from "./asset-grid.module.css";
+import styles from "./revenue-grid.module.css";
 
-export const AssetGrid = () => {
+export const RevenueGrid = () => {
   return (
     <section>
       <table className={styles.table}>
         <thead>
           <tr className={styles.tableHeader}>
-            <th>Asset Id</th>
-            <th>Asset Name</th>
+            <th>Revenue Id</th>
+            <th>Revenue Name</th>
             <th>No of Platforms</th>
             <th>No of Series</th>
           </tr>
@@ -41,4 +41,4 @@ export const AssetGrid = () => {
   );
 };
 
-export default AssetGrid;
+export default RevenueGrid;

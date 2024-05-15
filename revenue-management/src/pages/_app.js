@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
     <>
       {isMounted && (
         <Suspense fallback={<div>Loading Host Header...</div>}>
-          <HostHeader title="Asset Management" />
+          <HostHeader title="Revenue Management" />
           <HostSidebar menuList={menuList} />
         </Suspense>
       )}

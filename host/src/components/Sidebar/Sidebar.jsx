@@ -3,19 +3,15 @@ import React from "react";
 
 import styles from "./sidebar.module.css";
 
-export const Sidebar = () => {
+export const Sidebar = ({ menuList }) => {
   return (
     <nav className={styles.nav}>
       <ul>
-        <li className={styles.link}>
-          <Link href="/">Dashboard</Link>
-        </li>
-        <li className={styles.link}>
-          <Link href="/revenue-management">Revenue Management</Link>
-        </li>
-        <li className={styles.link}>
-          <Link href="/asset-management">Asset Management</Link>
-        </li>
+        {menuList.map(({ link, name }) => (
+          <li className={styles.link} key={link}>
+            <Link href={link}>{name}</Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );

@@ -1,0 +1,14 @@
+@layer {
+  .table {
+    @apply w-full max-w-screen-lg text-left my-10 bg-white;
+  }
+
+  .tableHeader {
+    @apply py-5 bg-slate-300;
+  }
+
+  .table th,
+  .table td {
+    @apply p-5 border-b-slate-500 border-b border-solid;
+  }
+}
