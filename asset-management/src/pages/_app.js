@@ -23,7 +23,10 @@ function MyApp({ Component, pageProps }) {
           <HostSidebar />
         </Suspense>
       )}
-      <Component {...pageProps} />
+
+      <main className={`min-h-screen w-full ml-[170px] py-5 px-10`}>
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }

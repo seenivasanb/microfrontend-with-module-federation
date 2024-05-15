@@ -1,0 +1,9 @@
+@layer {
+  .nav {
+    @apply fixed left-0 top-[72px] h-full p-10 bg-teal-700 text-white;
+  }
+
+  .link {
+    @apply text-lg font-semibold pb-4 hover:underline;
+  }
+}
