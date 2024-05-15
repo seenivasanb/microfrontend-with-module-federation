@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Suspense, lazy, useEffect, useState } from "react";
 
 const AssetGrid =
@@ -19,6 +20,10 @@ export default function AssetManagement() {
           <AssetGrid />
         </Suspense>
       )}
+
+      <Link href="/" className="text-teal-600 font-bold">
+        Back To Home
+      </Link>
     </section>
   );
 }
