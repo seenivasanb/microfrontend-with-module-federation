@@ -9,8 +9,12 @@ const nextConfig = {
         new NextFederationPlugin({
           name: "asset-management",
           filename: "static/chunks/remoteEntry.js",
+          remotes: {
+            host: "host@http://localhost:3001/_next/static/chunks/remoteEntry.js",
+          },
           exposes: {
-            "./title": "./src/components/RemoteHeader.js",
+            "./title": "./src/components/RemoteHeader.jsx",
+            "./grid": "./src/components/AssetGrid/AssetGrid.jsx",
           },
         })
       );

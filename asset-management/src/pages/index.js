@@ -1,15 +1,11 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import RemoteHeader from "@/components/RemoteHeader";
-
-const inter = Inter({ subsets: ["latin"] });
+import { AssetGrid } from "@/components/AssetGrid";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
+    <main className={`min-h-screen p-24`}>
       <RemoteHeader />
+      <AssetGrid />
     </main>
   );
 }

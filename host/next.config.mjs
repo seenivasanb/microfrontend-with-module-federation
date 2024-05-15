@@ -13,6 +13,10 @@ const nextConfig = {
             "asset-management":
               "asset-management@http://localhost:3002/_next/static/chunks/remoteEntry.js",
           },
+          exposes: {
+            "./header": "./src/components/Header/Header.jsx",
+            "./sidebar": "./src/components/Sidebar/Sidebar.jsx",
+          },
         })
       );
     }
